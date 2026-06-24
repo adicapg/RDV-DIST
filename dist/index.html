@@ -5,15 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/RDV-DIST/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rdv-ai</title>
+
+    <!-- 👇 Add this script FIRST before any other scripts -->
+    <script type="text/javascript">
+      (function() {
+        // Redirect /RDV-DIST/ to /RDV-DIST/#/
+        var location = window.location;
+        if (location.hash === '') {
+          window.location.replace(
+            location.protocol + '//' + 
+            location.hostname + 
+            (location.port ? ':' + location.port : '') +
+            '/RDV-DIST/#/'
+          );
+        }
+      })();
+    </script>
+
     <script type="module" crossorigin src="/RDV-DIST/assets/index-BCq3CQOh.js"></script>
-    <script>
-  (function() {
-    var redirect = new URLSearchParams(window.location.search).get('redirect');
-    if (redirect) {
-      window.history.replaceState(null, null, '/RDV-DIST' + redirect);
-    }
-  })();
-</script>
     <link rel="stylesheet" crossorigin href="/RDV-DIST/assets/index-qUffWZ-Q.css">
   </head>
   <body>
