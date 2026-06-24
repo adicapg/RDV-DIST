@@ -1,0 +1,21 @@
+<!-- dist/404.html -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect to index.html while preserving the path
+      var path = window.location.pathname;
+      var query = window.location.search;
+      var hash = window.location.hash;
+      var repoName = '/RDV-DIST';
+      
+      window.location.replace(
+        repoName + '/?redirect=' + 
+        encodeURIComponent(path.replace(repoName, '') + query) + 
+        hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

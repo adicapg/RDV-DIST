@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rdv-ai</title>
     <script type="module" crossorigin src="/RDV-DIST/assets/index-BCq3CQOh.js"></script>
+    <script>
+  (function() {
+    var redirect = new URLSearchParams(window.location.search).get('redirect');
+    if (redirect) {
+      window.history.replaceState(null, null, '/RDV-DIST' + redirect);
+    }
+  })();
+</script>
     <link rel="stylesheet" crossorigin href="/RDV-DIST/assets/index-qUffWZ-Q.css">
   </head>
   <body>
